@@ -9,7 +9,7 @@
   <router-link to="/"> Home</router-link>
   <router-link to="/about"> about</router-link>
   <router-view />
-
+  <!-- {{ count }} -->
   <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
 </template>
 
@@ -23,3 +23,14 @@
   margin-top: 60px;
 }
 </style>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  data() {
+    return {
+      count: 1,
+    };
+  },
+});
+</script>
