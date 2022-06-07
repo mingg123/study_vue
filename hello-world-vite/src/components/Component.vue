@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <p>{{ msg }}</p>
+  <!-- <div>
     <div>
       메세지 1 :
       <input :value="msg" @input="$emit('update:msg', $event.target.value)" />
@@ -8,12 +9,15 @@
       메세지 2 :
       <input :value="msg2" @input="$emit('update:msg2', $event.target.value)" />
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
 export default {
-  props: ['msg', 'msg2'],
-  emits: ['update:msg', 'update:msg2'],
+  inject: ['msg'],
 }
+// export default {
+//   props: ['msg', 'msg2'],
+//   emits: ['update:msg', 'update:msg2'],
+// }
 </script>
