@@ -5,6 +5,9 @@ import HelloWorld from './components/HelloWorld.vue'
 import WatchExample from './components/WatchExample.vue'
 import ProviderExample from './components/ProviderExample.vue'
 import Example1 from './components/Example1.vue'
+import MyButton from './components/MyButton.vue'
+import ButtonExample from './components/ButtonExample.vue'
+import TableContainer from './components/TableContainer.vue'
 </script>
 
 <template>
@@ -12,7 +15,10 @@ import Example1 from './components/Example1.vue'
   <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
   <!-- <WatchExample /> -->
   <!-- <ProviderExample /> -->
-  <Example1 />
+  <!-- <Example1 /> -->
+  <!-- <MyButton /> -->
+  <!-- <ButtonExample /> -->
+  <TableContainer />
 </template>
 
 <style>
